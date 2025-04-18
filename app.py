@@ -2,10 +2,11 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from nltk.sentiment import SentimentIntensityAnalyzer
-import nltk
-from wordcloud import WordCloud, STOPWORDS
 import re
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
+from wordcloud import WordCloud, STOPWORDS
+
 
 # Download VADER lexicon
 nltk.download('vader_lexicon')
