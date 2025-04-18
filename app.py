@@ -7,9 +7,7 @@ import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 from wordcloud import WordCloud, STOPWORDS
 
-
-# Download VADER lexicon
-nltk.download('vader_lexicon')
+nltk.download('vader_lexicon', quiet=True)  # Add quiet=True to suppress download messages
 
 # Load the data
 @st.cache_data
